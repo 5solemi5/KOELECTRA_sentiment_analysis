@@ -40,7 +40,8 @@
   
 
 
-![앱](https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/5c8e5e90-bc67-4f15-a3a0-038af1f15d15)
+![큰앱](https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/703909d9-94a2-4db8-87a9-09cc1c20b6ef)
+
  
  <div align=center>
   
