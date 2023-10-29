@@ -29,13 +29,10 @@
   </div>
 
 글로벌 디지털헬스케어 산업은 질병의 사후적 진단·치료에서 선제적 예방·관리로 의료 패러다임이 변화함에 따라 최근 6년간(’14~‘20) 연평균 39% 성장했고 향후(’20~‘27) 연평균 18.8%의 높은 성장세를 이어나갈 것으로 전망된다. 2021년 기준 매출은 1조 8227억원으로 전년 대비 34.6% 성장한 것으로 나타났다. 의료용기기 매출이 9731억원(53.4%)으로 가장 높았고 건강관리 기기 2546억원, 디지털 건강관리 플랫폼2250억원으로 뒤를 이었다. [<sup>[1]</sup>](https://www.dailypharm.com/Users/News/NewsView.html?ID=298670)
-  
- <div align=center>
 
-![큰앱](https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/703909d9-94a2-4db8-87a9-09cc1c20b6ef)
+<div align=center><img src = "https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/90f62896-0d86-4892-8ed3-0959807994fb" width="700">
 
-  
-[[자료: 건강 관리앱 아이콘들](https://www.youtube.com/watch?app=desktop&v=R8UwQF8NHG8)]
+[자료: 건강 관리앱 아이콘들]
   
  </div>
 
