@@ -79,11 +79,7 @@
 
 - 원시 데이터 분석:
 
-
- 
-  ![image](https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/e3a88f49-2794-4f92-9235-b7037e3ae337)
-
-  <div align=center>
+<div align=center><img src = "https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/e3a88f49-2794-4f92-9235-b7037e3ae337">
 
 [자료: Number of reviews by rating]
 
@@ -114,9 +110,7 @@ rating의 평균이 4.355578이므로 rating의 평균이 3.85~4.85 사이에 �
 
 (3) Review에서 한글이 아닌 것들과 중복, 결측치를 제거한다.
 
-(4) Rating 3의 리뷰는 중립적인 내용의 리뷰가 대부분이었다. 학습 정확도를 높이기 위해 Rating 3의 리뷰는 제외한다.
-
-(5) 전처리한 데이터의 Rating이 3이상인 리뷰를 1(긍정), 3미만인 리뷰를 0(부정)으로 바꾸어서 이진 분류한다.
+(4) 전처리한 데이터의 Rating이 3이상인 리뷰를 1(긍정), 3미만인 리뷰를 0(부정)으로 바꾸어서 이진 분류한다.
 
 - 학습에 활용할 데이터의 양
   
