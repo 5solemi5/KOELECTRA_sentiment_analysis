@@ -79,6 +79,16 @@
 
 - 원시 데이터 분석:
 
+
+ 
+  ![image](https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/e3a88f49-2794-4f92-9235-b7037e3ae337)
+
+  <div align=center>
+
+[자료: Number of reviews by rating]
+
+</div>
+
 ## 2.3 데이터 전처리
 
 - 입력 데이터의 전처리 과정:
