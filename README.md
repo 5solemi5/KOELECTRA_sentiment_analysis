@@ -57,8 +57,6 @@
 
 - 원시 데이터 정보:
 
-<div align=center>
-
 |Index|app|review|rating|
 |-|-|-|-|
 |1|다리 근육 운동 – 4주 프로그램|다른 P4P어플과 연동 하면 기존에 있던 스케쥴이 싹 사라짐|1|
@@ -74,15 +72,10 @@
 
 일부, 영어와 이모티콘이 포함된 review들이 존재한다.
 
-</div>
 
 - 원시 데이터 분석:
 
-<div align=center><img src = "https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/7a1893a1-02ce-4517-9b56-648dcb8326e6">
-
-[자료: Number of reviews by rating]
-
-</div>
+<div><img src = "https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/b0248698-1050-4425-b77e-31ceaf82da22" width="500"></div>
 
 ## 2.3 데이터 전처리
 
@@ -95,18 +88,18 @@
 
 |app 개수|review 개수|rating 평균|
 |-|-|-|
-|44개|468,814개|4.355578|
+|44개|468,814개|4.36|
 
 
 (2) 그 중에서 개선의 여지가 있는 평균 평점의 앱들과 리뷰의 수가 많은 앱들만 남긴다.
 
-원시 데이터의 rating의 평균이 4.355578이므로 rating의 평균이 4.1~4.4 사이에 있는 앱들과 리뷰의 수가 많은 앱들만 남긴다.
+원시 데이터의 rating의 평균이 4.36이므로 rating의 평균이 4.1~4.4 사이에 있는 앱들과 리뷰의 수가 많은 앱들만 남긴다.
 
 결과:
 
 |app 개수|review 개수|rating 평균|
 |-|-|-|
-|9개|152,592개|4.370255321|
+|9개|152,592개|4.37|
 
 (3) Review에서 한글이 아닌 리뷰, 중복, 결측치를 제거한다.
 
@@ -114,7 +107,7 @@
 
 |app 개수|review 개수|rating 평균|
 |-|-|-|
-|9개|64,248개|4.160658698|
+|9개|64,248개|4.16|
 
 <div><img src = "https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/3de8afd7-21e0-4b2e-9477-edc1bbab9424" width="380"></div>
 
@@ -127,10 +120,9 @@
 |-|-|
 |14,046개|50,202개|
 
-<div><img src = "https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/ec45f985-74da-4652-8685-9ab4327c590f" width="500"></div>
+<div><img src = "https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/c1209011-a4a4-4d62-94d9-09bbd2e341a0" width="570"></div>
 
-
-평균값보다 높은 임계값을 기준으로 이진 분류했음에도 불구하고 긍정(1)에 데이터가 치우쳐 있다. 클래스 불균형은 모델의 학습에 부정적인 영향을 미칠 수 있는 다음과 같은 이유로 인해 문제가 될 수 있다. 
+평균값보다 높은 임계값을 기준으로 이진 분류했음에도 불구하고 긍정(1)에 데이터가 치우쳐 있다. 클래스 불균형은 모델의 학습에 부정적인 영향을 미칠 수 있다. 
 
 
 - 학습에 활용할 데이터의 양
@@ -148,7 +140,7 @@
 
 [자료: 학습 데이터의 구성]
 
-<div><img src = "https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/2a15ba7f-d624-488a-b6df-6ba6fed49669" width="500"></div>
+<div><img src = "https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/c1027d97-ecea-4bfd-826b-21cd1cf9ec7c" width="570"></div>
   
 - 학습과 검증 데이터셋 분리
 
