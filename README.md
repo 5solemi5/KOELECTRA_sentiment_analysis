@@ -78,7 +78,7 @@
 
 - 원시 데이터 분석:
 
-<div align=center><img src = "https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/e3a88f49-2794-4f92-9235-b7037e3ae337">
+<div align=center><img src = "https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/7a1893a1-02ce-4517-9b56-648dcb8326e6">
 
 [자료: Number of reviews by rating]
 
