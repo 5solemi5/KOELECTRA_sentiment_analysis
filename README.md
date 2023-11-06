@@ -127,7 +127,7 @@
 |-|-|
 |14,046개|50,202개|
 
-<div><img src = "https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/ec45f985-74da-4652-8685-9ab4327c590f" width="450"></div>
+<div><img src = "https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/ec45f985-74da-4652-8685-9ab4327c590f" width="500"></div>
 
 
 평균값보다 높은 임계값을 기준으로 이진 분류했음에도 불구하고 긍정(1)에 데이터가 치우쳐 있다. 클래스 불균형은 모델의 학습에 부정적인 영향을 미칠 수 있는 다음과 같은 이유로 인해 문제가 될 수 있다. 
@@ -147,6 +147,8 @@
 |4001|눔(Noom) - 건강관리...|좋긴 한데 업데이트 이후 시간하고..|3|0|
 
 [자료: 학습 데이터의 구성]
+
+<div><img src = "https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/2a15ba7f-d624-488a-b6df-6ba6fed49669" width="500"></div>
   
 - 학습과 검증 데이터셋 분리
 
