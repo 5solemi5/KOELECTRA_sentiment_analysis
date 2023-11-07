@@ -1,4 +1,4 @@
-<div align=center><img src = "https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/45bbeb60-f509-49a5-8df7-a5010227358f" width="900">
+<div align=center><img src = "https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/1a6d2fa0-ae24-4426-aa26-bfcba7ba4690" width="800">
 
  
 # :hospital: :iphone: 건강 관리앱 리뷰 감성분석 :pill: :syringe: 
