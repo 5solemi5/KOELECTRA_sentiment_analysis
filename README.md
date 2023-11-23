@@ -83,7 +83,7 @@
 
 - 원시 데이터 분석:
 
-<div><img src = "https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/b0248698-1050-4425-b77e-31ceaf82da22" width="500"></div>
+<div><img src = "https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/b212a979-292e-4573-a548-4c6e9fb3b955" width="480"></div>
 
 ## 2.3 데이터 전처리
 
@@ -125,7 +125,7 @@
 |-|-|
 |14,046개|50,202개|
 
-<div><img src = "https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/c1209011-a4a4-4d62-94d9-09bbd2e341a0" width="570"></div>
+<div><img src = "https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/ba437cbf-595f-498e-8f62-204949137d49" width="570"></div>
 
 평균값보다 높은 임계값을 기준으로 이진 분류했음에도 불구하고 긍정(1)에 데이터가 치우쳐 있다. 클래스 불균형은 모델의 학습에 부정적인 영향을 미칠 수 있다. 
 
@@ -153,7 +153,7 @@
 
 </div>
 
-<div><img src = "https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/c1027d97-ecea-4bfd-826b-21cd1cf9ec7c" width="570"></div>
+<div><img src = "https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/d2c50ec5-71b8-4b2d-8c84-8c400b9974c3" width="570"></div>
   
 - 학습과 검증 데이터셋 분리
 
