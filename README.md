@@ -89,8 +89,45 @@
 
 - 입력 데이터의 전처리 과정:
 
+(1) Review에서 한글이 아닌 리뷰, 중복, 결측치를 제거한다.
 
-(1) 원시 데이터에서 건강 관리 앱 424개 중에서 리뷰의 수가 상위 44위까지의 앱들만 남긴다.
+한글이 아닌 리뷰: 프로젝트의 목적이 한글 텍스트에 대한 긍부정 예측이기 떄문에 한글이 아닌 리뷰는 불필요한 정보가 된다. 이런 정보는 모델의 성능을 떨어뜨릴 수 있으므로 제거한다.
+
+중복: 같은 데이터를 반복적으로 학습하면 모델이 편향되어, 실제 세계의 다양한 상황을 정확히 반영하지 못할 수 있다.
+
+결측치: 결측치는 데이터에 빈 공간을 만들어, 모델이 제대로 학습하지 못하게 만든다. 결측치가 있는 데이터를 그대로 사용하면, 모델의 성능이 떨어질 수 있다. 
+
+```
+import pandas as pd
+
+# 엑셀 파일 불러오기
+excel_data = pd.read_excel('dataset_raw.xlsx')
+
+# 중복 제거
+excel_data.drop_duplicates(subset=['review'], inplace=True)
+
+# 결측치가 있는 행 제거
+excel_data.dropna(subset=['review'], inplace=True)
+
+# 'review' 열에서 한글 문자, 자음, 모음, 공백 문자 이외의 모든 문자 제거
+excel_data['review'] = excel_data['review'].str.replace("[^ㄱ-ㅎㅏ-ㅣ가-힣 ]", "")
+
+# 전처리 후 처음 몇 개 행 확인
+print(excel_data.head())
+
+# 새로운 엑셀 파일로 저장
+excel_data.to_excel('전처리결과(3)_제거.xlsx', index=False)
+```
+
+결과:
+
+|app 개수|review 개수|
+|-|-|
+|412개|287,970개|
+
+(2) 원시 데이터에서 건강 관리 앱 412개 중에서 리뷰의 수가 상위 44위까지의 앱들만 남긴다.
+
+
 
 결과:
 
@@ -106,15 +143,6 @@
 |-|-|-|
 |9개|152,592개|4.37|
 
-(3) Review에서 한글이 아닌 리뷰, 중복, 결측치를 제거한다.
-
-결과:
-
-|app 개수|review 개수|rating 평균|
-|-|-|-|
-|9개|64,248개|4.16|
-
-<div><img src = "https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/3de8afd7-21e0-4b2e-9477-edc1bbab9424" width="380"></div>
 
 (4) Rating 5, 4은 긍정(1), 3, 2, 1, 0은 부정(0)으로 이진분류를 한다.
 
