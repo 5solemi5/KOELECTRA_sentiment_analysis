@@ -153,7 +153,8 @@ excel_data.to_excel('전처리결과(3)_제거.xlsx', index=False)
 |-|-|
 |14,046개|50,202개|
 
-<div><img src = "https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/ba437cbf-595f-498e-8f62-204949137d49" width="570"></div>
+<div><img src = "https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/32f8869a-a1f2-4636-b72e-6b1a0ae97637" width="570"></div>
+
 
 평균값보다 높은 임계값을 기준으로 이진 분류했음에도 불구하고 긍정(1)에 데이터가 치우쳐 있다. 클래스 불균형은 모델의 학습에 부정적인 영향을 미칠 수 있다. 
 
@@ -181,7 +182,7 @@ excel_data.to_excel('전처리결과(3)_제거.xlsx', index=False)
 
 </div>
 
-<div><img src = "https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/d2c50ec5-71b8-4b2d-8c84-8c400b9974c3" width="570"></div>
+<div><img src = "https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/60fd406b-9012-47ef-91d1-19cb507ff49e" width="570"></div>
   
 - 학습과 검증 데이터셋 분리
 
