@@ -201,3 +201,7 @@ excel_data.to_excel('전처리결과(3)_제거.xlsx', index=False)
 # 4. 배운점
 
 # Reference
+
+[1]https://www.dailypharm.com/Users/News/NewsView.html?ID=298670
+
+[2]https://www.bioin.or.kr/board.do?num=309481&bid=industry&cmd=view
