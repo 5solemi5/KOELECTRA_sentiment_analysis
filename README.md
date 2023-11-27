@@ -121,13 +121,28 @@ excel_data.to_excel('전처리결과(3)_제거.xlsx', index=False)
 |-|-|
 |412개|287,970개|
 
-(2) 
+(2) Review의 너무 길거나 짧은 문장들은 딥러닝 학습에 무의미한 데이터들이므로 제거한다. 문장 길이가 5~500인 Reviews만 추출한다
+
+```
+import pandas as pd
+
+# 엑셀 파일 읽기
+df = pd.read_excel("전처리결과(3)_제거.xlsx", engine='openpyxl')
+
+# 각 리뷰의 길이 계산하고 데이터프레임 필터링
+df['length'] = df['review'].str.len()
+filtered_df = df[(df['length'] >= 5) & (df['length'] <= 500)]
+
+# 필터링된 데이터를 새로운 엑셀 파일로 저장
+filtered_df.reset_index(drop=True, inplace=True)
+filtered_df.to_excel("전처리결과(3)_문장길이.xlsx", index=False)
+```
 
 결과:
 
 |app 개수|review 개수|
 |-|-|
-|412개|287,970개|
+|412개|278,427개|
 
 
 (3) 원시 데이터에서 건강 관리 앱 412개 중에서 리뷰의 수가 상위 44위까지의 앱들만 남긴다.
