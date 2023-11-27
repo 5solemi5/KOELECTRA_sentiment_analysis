@@ -144,9 +144,9 @@ filtered_df.to_excel("전처리결과(3)_문장길이.xlsx", index=False)
 ![길게최종](https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/ad1bb4d0-00b0-4c1a-a203-b216ef46c27d)
 
 
-|app 개수|review 개수|
-|-|-|
-|412개|278,427개|
+|app 개수|review 개수|rating 평균|
+|-|-|-|
+|412개|278,427개|-|
 
 
 (3) 리뷰의 개수가 충분해서 학습 및 분석의 의미가 있는 앱들을 남긴다. 건강 관리 앱 412개 중에서 리뷰의 수가 상위 10위까지의 앱들만 남긴다.
@@ -162,10 +162,11 @@ filtered_df.to_excel("전처리결과(3)_문장길이.xlsx", index=False)
 |10개|468,814개|4.36|
 
 
-(4) Rating 5, 4은 긍정(1), 3, 2, 1, 0은 부정(0)으로 이진분류를 한다.
+(5) Rating 5, 4은 긍정(1), 3, 2, 1, 0은 부정(0)으로 이진분류를 한다.
 
 결과:
 
+평균값보다 높은 임계값을 기준으로 이진 분류했음에도 불구하고 긍정(1)에 데이터가 치우쳐 있다. 클래스 불균형은 모델의 학습에 부정적인 영향을 미칠 수 있다. 
 
 |긍정(1)|부정(0)|
 |-|-|
@@ -173,8 +174,6 @@ filtered_df.to_excel("전처리결과(3)_문장길이.xlsx", index=False)
 
 <div><img src = "https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/32f8869a-a1f2-4636-b72e-6b1a0ae97637" width="570"></div>
 
-
-평균값보다 높은 임계값을 기준으로 이진 분류했음에도 불구하고 긍정(1)에 데이터가 치우쳐 있다. 클래스 불균형은 모델의 학습에 부정적인 영향을 미칠 수 있다. 
 
 
 - 학습에 활용할 데이터의 양
