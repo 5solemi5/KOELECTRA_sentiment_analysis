@@ -148,7 +148,7 @@ filtered_df.to_excel("전처리결과(3)_문장길이.xlsx", index=False)
 ![길게최종](https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/ad1bb4d0-00b0-4c1a-a203-b216ef46c27d)
 
 
-(3) 리뷰의 개수가 충분해서 학습 및 분석의 의미가 있는 앱들을 남긴다. 건강 관리 앱 412개 중에서 리뷰의 수가 상위 15위까지의 앱들만 남긴다.
+(3) 리뷰의 개수가 충분해서 학습 및 분석의 의미가 있는 앱들을 남긴다. 건강 관리 앱 412개 중에서 리뷰의 수가 상위 10위까지의 앱들만 남긴다.
 
 ```
 import pandas as pd
@@ -170,7 +170,7 @@ df_new.to_excel('전처리결과(3)_상위15개앱.xlsx', index=False)
 
 |app 개수|review 개수|rating 평균|
 |-|-|-|
-|15개|468,814개|4.36|
+|10개|468,814개|4.36|
 
 
 (5) Rating 5, 4은 긍정(1), 3, 2, 1, 0은 부정(0)으로 이진분류를 한다.
