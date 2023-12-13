@@ -142,7 +142,7 @@ filtered_df.to_excel("전처리결과(3)_문장길이.xlsx", index=False)
 
 |app 개수|review 개수|
 |-|-|
-|412개|278,426개|
+|412개|74,078개|
 
 
 ![길게최종](https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/ad1bb4d0-00b0-4c1a-a203-b216ef46c27d)
