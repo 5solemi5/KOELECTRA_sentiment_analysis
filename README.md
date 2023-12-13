@@ -169,7 +169,7 @@ df_new.to_excel('전처리결과(3)_상위3개앱.xlsx', index=False)
 결과:
 
 |app 개수|review 개수|
-|-|-|-|
+|-|-|
 |3개|110,410개|
 
 
