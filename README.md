@@ -183,8 +183,7 @@ df_new.to_excel('전처리결과(3)_상위3개앱.xlsx', index=False)
 |-|-|
 |23,547개|74,078개|
 
-<div><img src = "https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/32f8869a-a1f2-4636-b72e-6b1a0ae97637" width="570"></div>
-
+<div><img src = "https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/1a68c997-6541-4e6a-86d1-d94b9c9f09bb" width="570"></div>
 
 
 - 학습에 활용할 데이터의 양
