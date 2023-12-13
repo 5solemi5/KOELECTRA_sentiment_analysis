@@ -181,7 +181,7 @@ df_new.to_excel('전처리결과(3)_상위3개앱.xlsx', index=False)
 
 |긍정(1)|부정(0)|
 |-|-|
-|14,046개|50,202개|
+|23,547개|74,078개|
 
 <div><img src = "https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/32f8869a-a1f2-4636-b72e-6b1a0ae97637" width="570"></div>
 
