@@ -148,7 +148,7 @@ filtered_df.to_excel("전처리결과(3)_문장길이.xlsx", index=False)
 ![길게최종](https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/ad1bb4d0-00b0-4c1a-a203-b216ef46c27d)
 
 
-(3) 리뷰의 개수가 충분해서 학습 및 분석의 의미가 있는 앱들을 남긴다. 건강 관리 앱 412개 중에서 리뷰의 수가 상위 10위까지의 앱들만 남긴다.
+(3) 리뷰의 개수가 충분해서 학습 및 분석의 의미가 있는 앱들을 남긴다. 건강 관리 앱 412개 중에서 리뷰의 수가 상위 3위까지의 앱들만 남긴다.
 
 ```
 import pandas as pd
@@ -156,21 +156,21 @@ import pandas as pd
 # 엑셀 파일을 pandas DataFrame으로 읽습니다.
 df = pd.read_excel('전처리결과(3)_문장길이.xlsx')
 
-# 건강앱 이름별로 개수를 세고, 상위 15개만 선택합니다.
-top_15_apps = df['app'].value_counts().nlargest(15).index
+# 건강앱 이름별로 개수를 세고, 상위 3개만 선택합니다.
+top_3_apps = df['app'].value_counts().nlargest(3).index
 
-# 건강앱 이름이 상위 15개에 속하는 행만 선택하여 새로운 DataFrame을 생성합니다.
-df_new = df[df['app'].isin(top_15_apps)]
+# 건강앱 이름이 상위 3개에 속하는 행만 선택하여 새로운 DataFrame을 생성합니다.
+df_new = df[df['app'].isin(top_3_apps)]
 
 # 결과를 새로운 엑셀 파일로 저장합니다.
-df_new.to_excel('전처리결과(3)_상위15개앱.xlsx', index=False)
+df_new.to_excel('전처리결과(3)_상위3개앱.xlsx', index=False)
 ```
 
 결과:
 
-|app 개수|review 개수|rating 평균|
+|app 개수|review 개수|
 |-|-|-|
-|10개|468,814개|4.36|
+|3개|110,410개|
 
 
 (5) Rating 5, 4은 긍정(1), 3, 2, 1, 0은 부정(0)으로 이진분류를 한다.
