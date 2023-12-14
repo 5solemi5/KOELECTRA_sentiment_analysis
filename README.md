@@ -234,6 +234,8 @@ scikit-learn~=1.2.2
 
 ## 3.3 학습 결과 그래프
 
+![image](https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/efa532e3-ba33-41e7-894a-0bafefd54e4e)
+
 
 
 # 4. 배운점
