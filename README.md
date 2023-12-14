@@ -220,12 +220,19 @@ df_new.to_excel('전처리결과(3)_상위3개앱.xlsx', index=False)
 ## 3.1 개발 환경
 
 matplotlib~=3.8.2
+
 pandas~=2.1.3
+
 numpy~=1.26.2
+
 tensorflow~=2.15.0
+
 torch~=2.1.0
+
 transformers~=4.35.0
+
 seaborn~=0.13.0
+
 scikit-learn~=1.2.2
  
 ## 3.2 KOELECTRA fine-tuning
