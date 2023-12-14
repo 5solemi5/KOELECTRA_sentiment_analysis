@@ -1,7 +1,7 @@
 <div align=center><img src = "https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/1a6d2fa0-ae24-4426-aa26-bfcba7ba4690" width="800">
 
  
-# :hospital:  건강 관리앱 리뷰 감성분석 :iphone:
+# 🏥  건강 관리앱 리뷰 감성분석 📱
   
 **KOELECTRA를 활용한 긍부정 예측 딥러닝 프로젝트**
   
