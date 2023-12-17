@@ -277,8 +277,8 @@ Hugging Face 라이브러리의 model.save_pretrained를 사용하여 훈련된 
 
 ![image](https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/efa532e3-ba33-41e7-894a-0bafefd54e4e)
 
-위 그래프를 통해 학습할 수록 loss가 줄고 있는다는 것을 알 수 있다.
-KOELECTRA fine-tuning의 결과, 정확도는 약 0.88%가 나왔다.
+위 그래프를 통해 점차 loss가 줄고 있는다는 것을 알 수 있다.
+KOELECTRA fine-tuning 실행 결과, 정확도는 약 0.88% 정도로 높지도 낮지도 않은 치수이었다.
 
 # 4. 배운점
 
