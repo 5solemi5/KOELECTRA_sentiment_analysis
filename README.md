@@ -240,28 +240,34 @@ scikit-learn~=1.2.2
 
 데이터 로딩 및 전처리:
 
-Excel 파일(전처리결과(3)_per2000.xlsx)에서 데이터를 읽어와 누락된 값이 있는 행을 제거한 후 텍스트 리뷰와 해당 평가 등급을 text와 label 변수로 분리합니다.
-Electra 토크나이저(Hugging Face의 ElectraTokenizer)를 사용하여 텍스트 데이터를 Electra 모델에 적합한 토큰화된 입력으로 변환합니다.
+전처리된 데이터를 읽어와 누락된 값이 있는 행을 제거한 후 텍스트 리뷰와 해당 평가 등급을 text와 label 변수로 분리한다.
+Electra 토크나이저(Hugging Face의 ElectraTokenizer)를 사용하여 텍스트 데이터를 Electra 모델에 적합한 토큰화된 입력으로 변환한다.
+
 데이터 분할:
 
-입력 ID와 어텐션 마스크를 고려하여 데이터를 학습 및 검증 세트로 분할합니다.
+입력 ID와 어텐션 마스크를 고려하여 데이터를 학습 및 검증 세트로 분할한다.
+
 데이터 로더:
 
-학습 및 검증 세트에 대한 PyTorch DataLoader 객체를 생성합니다. 이러한 로더는 학습 중에 데이터 집합의 배치를 순회하는 데 사용됩니다.
+학습 및 검증 세트에 대한 PyTorch DataLoader 객체를 생성한다. 이러한 로더는 학습 중에 데이터 집합의 배치를 순회하는 데 사용된다.
+
 모델 초기화:
 
-Hugging Face 라이브러리에서 시퀀스 분류를 위한 Electra 모델(ElectraForSequenceClassification)을 초기화하고 옵티마이저(Adam) 및 학습률 스케줄러(get_linear_schedule_with_warmup)를 설정합니다.
+Hugging Face 라이브러리에서 시퀀스 분류를 위한 Electra 모델(ElectraForSequenceClassification)을 초기화하고 옵티마이저(Adam) 및 학습률 스케줄러(get_linear_schedule_with_warmup)를 설정한다.
+
 학습 루프:
 
 지정된 epoch 수에 대한 루프 실행.
 각 epoch마다:
-학습 데이터를 사용하여 모델을 학습시킵니다.
-손실을 계산하고 역전파하여 모델 가중치를 업데이트합니다.
-훈련 손실을 기록하고 학습률 스케줄러를 업데이트합니다.
-검증 세트에서 모델을 평가하고 정확도를 계산합니다.
+학습 데이터를 사용하여 모델을 학습시킨다.
+손실을 계산하고 역전파하여 모델 가중치를 업데이트한다.
+훈련 손실을 기록하고 학습률 스케줄러를 업데이트한다.
+검증 세트에서 모델을 평가하고 정확도를 계산한다.
+
 TensorBoard 로깅:
 
-torch.utils.tensorboard의 SummaryWriter를 사용하여 훈련 손실을 로깅하여 TensorBoard에서 시각화합니다.
+torch.utils.tensorboard의 SummaryWriter를 사용하여 훈련 손실을 로깅하여 TensorBoard에서 시각화한다.
+
 모델 저장:
 
 Hugging Face 라이브러리의 model.save_pretrained를 사용하여 훈련된 모델을 저장합니다.
@@ -271,7 +277,8 @@ Hugging Face 라이브러리의 model.save_pretrained를 사용하여 훈련된 
 
 ![image](https://github.com/5solemi5/KOELECTRA_sentiment_analysis/assets/104000117/efa532e3-ba33-41e7-894a-0bafefd54e4e)
 
-
+위 그래프를 통해 학습할 수록 loss가 줄고 있는다는 것을 알 수 있다.
+KOELECTRA fine-tuning의 결과, 정확도는 약 0.88%가 나왔다.
 
 # 4. 배운점
 
