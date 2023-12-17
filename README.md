@@ -239,25 +239,21 @@ scikit-learn~=1.2.2
 ## 3.2 KOELECTRA fine-tuning
 
 데이터 로딩 및 전처리:
-
 전처리된 데이터를 읽어와 누락된 값이 있는 행을 제거한 후 텍스트 리뷰와 해당 평가 등급을 text와 label 변수로 분리한다.
 Electra 토크나이저(Hugging Face의 ElectraTokenizer)를 사용하여 텍스트 데이터를 Electra 모델에 적합한 토큰화된 입력으로 변환한다.
 
 데이터 분할:
-
 입력 ID와 어텐션 마스크를 고려하여 데이터를 학습 및 검증 세트로 분할한다.
 
 데이터 로더:
-
 학습 및 검증 세트에 대한 PyTorch DataLoader 객체를 생성한다. 이러한 로더는 학습 중에 데이터 집합의 배치를 순회하는 데 사용된다.
 
 모델 초기화:
-
 Hugging Face 라이브러리에서 시퀀스 분류를 위한 Electra 모델(ElectraForSequenceClassification)을 초기화하고 옵티마이저(Adam) 및 학습률 스케줄러(get_linear_schedule_with_warmup)를 설정한다.
 
 학습 루프:
-
 지정된 epoch 수에 대한 루프 실행.
+
 각 epoch마다:
 학습 데이터를 사용하여 모델을 학습시킨다.
 손실을 계산하고 역전파하여 모델 가중치를 업데이트한다.
@@ -270,7 +266,7 @@ torch.utils.tensorboard의 SummaryWriter를 사용하여 훈련 손실을 로깅
 
 모델 저장:
 
-Hugging Face 라이브러리의 model.save_pretrained를 사용하여 훈련된 모델을 저장합니다.
+Hugging Face 라이브러리의 model.save_pretrained를 사용하여 훈련된 모델을 저장한다.
 
 
 ## 3.3 학습 결과 그래프
