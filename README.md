@@ -253,19 +253,15 @@ Hugging Face 라이브러리에서 시퀀스 분류를 위한 Electra 모델(Ele
 
 학습 루프:
 지정된 epoch 수에 대한 루프 실행.
-
-각 epoch마다:
-학습 데이터를 사용하여 모델을 학습시킨다.
+각 epoch마다 학습 데이터를 사용하여 모델을 학습시킨다.
 손실을 계산하고 역전파하여 모델 가중치를 업데이트한다.
 훈련 손실을 기록하고 학습률 스케줄러를 업데이트한다.
 검증 세트에서 모델을 평가하고 정확도를 계산한다.
 
 TensorBoard 로깅:
-
 torch.utils.tensorboard의 SummaryWriter를 사용하여 훈련 손실을 로깅하여 TensorBoard에서 시각화한다.
 
 모델 저장:
-
 Hugging Face 라이브러리의 model.save_pretrained를 사용하여 훈련된 모델을 저장한다.
 
 
