@@ -1,0 +1,13 @@
+# data / model (용량 문제로 제외)
+*.xlsx
+*.pt
+*.safetensors
+koelectra-*/
+logs/
+runs/
+# env
+venv/
+.venv/
+.idea/
+__pycache__/
+~$*
